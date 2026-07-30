@@ -60,67 +60,77 @@ section{
 =========================================*/
 
 .opening-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:40px 20px;
+}
 
-    text-align:center;
+.invite-title{
 
-    position:relative;
+    font-size:18px;
 
-    z-index:2;
+    letter-spacing:12px;
+
+    color:#C89D4A;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
 
 }
 
-.opening-title{
+.gold-line{
 
-    font-family:'Cormorant Garamond', serif;
+    width:120px;
 
-    font-size:22px;
+    height:2px;
 
-    letter-spacing:5px;
+    background:#C89D4A;
 
-    color:#C89D4A;
+    margin-bottom:30px;
+
+    opacity:.7;
+
+}
+
+.aa-logo{
+
+    width:100px;
 
     margin-bottom:25px;
 
 }
 
-.opening-logo{
-
-    width:110px;
-
-    display:block;
-
-    margin:0 auto 20px;
-
-}
-
 .opening-date{
 
-    font-family:'Cormorant Garamond', serif;
+    font-family:"Cormorant Garamond",serif;
 
-    font-size:30px;
+    font-size:48px;
 
     color:#7A2338;
 
-    letter-spacing:2px;
+    font-weight:500;
 
-    margin-bottom:40px;
+    margin-bottom:45px;
 
 }
 
 .tap-text{
 
-    margin-top:30px;
+    margin-top:35px;
 
-    color:#777;
+    font-size:15px;
 
-    font-size:16px;
+    letter-spacing:4px;
 
-    letter-spacing:1px;
+    color:#999;
 
-    animation:blink 1.8s infinite;
+    animation:pulse 2s infinite;
 
 }
-
 
 
 /*=========================
@@ -743,7 +753,7 @@ section{
 
     url("assets/images/hero.jpg");
 
-    background-size:cover;
+    background-size:cover !important;
     background-position:50% 90%;
 
     animation:heroZoom 18s infinite alternate;
@@ -1397,6 +1407,23 @@ section{
     }
 
 }
+
+@keyframes pulse{
+
+0%,100%{
+
+opacity:.45;
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+}
+
 /*=========================================
         MOBILE RESPONSIVE
 =========================================*/
@@ -1625,6 +1652,17 @@ section{
 .contact span{
     display:block;
     margin:12px 0;
+}
+
+.footer{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.designer-credit{
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 1px;
 }
 
 }
