@@ -1432,17 +1432,21 @@ opacity:1;
 
 /* ---------- Opening ---------- */
 
-.opening-title{
+.invite-title{
     font-size:18px;
-    letter-spacing:3px;
+    letter-spacing:5px;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
-.opening-logo{
+.aa-logo{
     width:85px;
 }
 
 .opening-date{
-    font-size:24px;
+    font-size:36px;
 }
 
 .envelope{
